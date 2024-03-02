@@ -1,0 +1,485 @@
+@font-face {
+    src: url("../fonts/Satisfy/Satisfy-Regular.ttf");
+    src: url("../fonts/Roboto/Roboto-Black.ttf");
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 1rem 0;
+    width: 100%;
+    left: 0;
+    top: 0;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: "satisfy", sans-serif;
+}
+/*h1 {*/
+/*    font-size: 40px;*/
+/*}*/
+
+.container h2 {
+    font-size: 28px;
+}
+
+section {
+    padding-top: 10rem;
+}
+
+section #menu {
+    padding-top: 10rem;
+}
+
+.carousel-item {
+    height: 100vh;
+    min-height: 300px;
+    background: no-repeat center center scroll;
+    background-size: cover;
+    -webkit-background-size: cover;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 35%;
+    right: 15%;
+}
+
+.carousel-caption h5 {
+    margin-top: 3.125rem;
+    font-size: 45px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 1.5rem;
+}
+
+.carousel-caption p {
+    width: 75%;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.9;
+    font-family: "Roboto", sans-serif;
+}
+
+.navbar-light .navbar-brand {
+    color: #fff;
+    font-size: 28px;
+    /*text-transform: uppercase;*/
+    /*font-weight: bold;*/
+    letter-spacing: 2px;
+}
+
+.navbar-light .navbar-brand:hover {
+    color: #ffb03b;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #ffb03b;
+}
+
+.nav-item {
+    font-size: 1.3rem;
+    padding-right: 2rem;
+}
+
+.carousel-caption a {
+    text-decoration: none;
+    margin-top: 1.5rem;
+    color: #fff;
+    border: none;
+}
+
+.carousel-item img {
+    vertical-align: top;
+}
+
+
+/*        --------------About----------- */
+
+span {
+    color: #ff9505;
+}
+.about-section {
+    margin: 4rem 0;
+    height: 100vh;
+    align-items: center;
+    /*display: flex;*/
+}
+
+.section-title h2 {
+    margin-top: 0.5rem;
+    text-align: center;
+    /*padding-top: 2%;*/
+    font-size: 2.6rem;
+}
+
+.section-title p {
+    text-align: center;
+    width: 80%;
+    margin-left: 10%;
+    padding: 1.8rem 0;
+    font-family: "Roboto", sans-serif;
+}
+
+
+.about .box {
+  padding: 50px 30px;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  transition: all ease-in-out 0.3s;
+  height: 100%;
+}
+
+
+
+.about .box h4 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  padding: 0;
+  margin: 20px 0;
+  color: #6c665c;
+}
+
+.about .box p {
+  color: #aaaaaa;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+.about .box:hover {
+  background: #ffb03b;
+  padding: 30px 30px 70px 30px;
+  box-shadow: 10px 15px 30px rgba(0, 0, 0, 0.18);
+}
+
+.about .box:hover span,
+.about .box:hover h4,
+.about .box:hover p {
+  color: #fff;
+}
+
+
+/*   +++++++++++++++++    menu    ++++++++++++ */
+
+body{
+    line-height: 1.5;
+    background-color: #fff;
+    color: #000;
+}
+.menu{
+    margin: 2rem 0;
+}
+.menu-container{
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+img{
+    width: 100%;
+    display: block;
+}
+.menu-head{
+    text-align: center;
+}
+.menu-head h2{
+    font-size: 2.6rem;
+}
+.menu-head p{
+    font-weight: 300;
+    padding: 1.8rem 0;
+    font-family: "Roboto", sans-serif;
+}
+.menu-btns{
+    padding: 0.6rem 0;
+    display: flex;
+    justify-content: center;
+}
+.menu-btn{
+    /*font-family: var(--Inter);*/
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 600;
+    background: none;
+    border: none;
+    color: #ff9505;
+    display: block;
+    margin: 0 1rem;
+    cursor: pointer;
+    outline: 0;
+    transition: opacity 0.4s ease-out;
+}
+
+
+.menu-btn::after{
+    content: "";
+    display: block;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #ffb03b;
+    margin-top: 0.5rem;
+    width: 0;
+    transition: width 0.4s ease-out;
+}
+.menu-btn:hover::after{
+    width: 100%;
+}
+.menu-btn:hover{
+    opacity: 0.8;
+}
+.active-btn{
+    color: #000;
+}
+.food-items{
+    margin: 2rem 0;
+}
+.food-item{
+    border-radius: 4px;
+    overflow: hidden;
+    background: #fff;
+    color: #000;
+    margin: 0.6rem 0;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s;
+}
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+.food-img img{
+    border-radius: 4px;
+}
+.food-content{
+    padding: 1rem;
+}
+.food-name{
+    color: #ff9505;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+.line{
+    width: 100px;
+    height: 3px;
+    background: #ff9505;
+    margin-bottom: 3px;
+}
+.food-price{
+    padding: 0.4rem 0;
+    font-weight: 600;
+    font-size: 1.4rem;
+    opacity: 0.8;
+}
+.rating{
+    display: flex;
+    list-style: none;
+}
+.rating .bi-star-fill {
+    margin-right: 0.4rem;
+    color: #ff9505;
+}
+
+.rating .bi-star {
+    margin-right: 0.4rem;
+    color: #ff9505;
+}
+
+.rating .bi-star-half {
+    margin-right: 0.4rem;
+    color: #ff9505;
+}
+
+.category{
+    padding-top: 0.2rem;
+    font-size: 1rem;
+    font-weight: 800;
+    /*font-family: var(--Inter);*/
+}
+.category span{
+    font-weight: 500;
+}
+
+@media screen and (min-width: 600px){
+    .food-item{
+        display: grid;
+        grid-template-columns: 25% auto;
+        align-items: center;
+        padding: 1rem;
+        column-gap: 1rem;
+    }
+    .food-content{
+        padding: 0;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .menu-head p{
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .menu-head p{
+        width: 70%;
+    }
+    .food-items{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 2rem;
+    }
+}
+
+
+/*    -------------Contact Us------------ */
+.info-wrap {
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    margin-bottom: 2rem;
+}
+
+.contact .info i {
+    font-size: 20px;
+    color: #ff9505;
+    float: left;
+    width: 44px;
+    height: 44px;
+    background: #fff6e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+    padding: 0 0 0 60px;
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #433f39;
+}
+
+.contact .info p {
+    padding: 0 0 0 60px;
+    font-family: "Roboto", sans-serif;
+    margin-bottom: 5px;
+    color: #433f39;
+}
+
+
+
+
+/*         ------------ Form ---------------      */
+
+
+ /* Style inputs, select elements and textareas */
+input[type=text], input[type=email], textarea, input[type=time], input[type=date], input[type=number]{
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+/* Style the label to display next to the inputs */
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+    font-family: "Roboto", sans-serif;
+}
+.section-title h2 {
+    text-align: center;
+    font-size: 2.6rem;
+    padding: 1.8rem 0;
+}
+
+/* Style the submit button */
+input[type=submit] {
+  background-color: #ff9505;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  float: right;
+    margin: 2rem auto;
+}
+
+input[type=submit]:hover {
+    background: #ffb03b;
+}
+
+/* Style the container */
+.container-contact {
+  margin: 3rem auto;
+  padding: 20px;
+}
+
+/* Floating column for labels: 25% width */
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem 1rem;
+    margin-top: 5rem;
+}
+
+footer p {
+    color: #fff;
+    font-size: 0.95rem;
+    letter-spacing: 0.25rem;
+    font-family: "Roboto", sans-serif;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+
